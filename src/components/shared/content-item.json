@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shared_content_items",
+  "info": {
+    "displayName": "ContentItem"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "titleMain": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

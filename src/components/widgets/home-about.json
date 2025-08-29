@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_widgets_home_abouts",
+  "info": {
+    "displayName": "HomeAbout",
+    "description": "HomeAbout widget component"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

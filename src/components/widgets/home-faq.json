@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_widgets_home_faqs",
+  "info": {
+    "displayName": "HomeFaq",
+    "description": "HomeFaq widget component"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "titleMain": {
+      "type": "string"
+    },
+    "items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::faq.faq"
+    }
+  }
+}

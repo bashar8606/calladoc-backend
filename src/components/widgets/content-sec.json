@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_widgets_content-secs",
+  "info": {
+    "displayName": "ContentSec",
+    "description": "ContentSec widget component."
+  },
+  "options": {
+    "timestamps": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 100,
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "items": {
+      "type": "component",
+      "component": "shared.content-item",
+      "repeatable": true
+    }
+  }
+}

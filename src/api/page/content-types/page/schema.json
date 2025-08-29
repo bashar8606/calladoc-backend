@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "widgets": {
+      "type": "dynamiczone",
+      "components": [
+        "widgets.home-banner",
+        "widgets.inner-banner",
+        "widgets.home-stat",
+        "widgets.home-spec",
+        "widgets.home-services",
+        "widgets.home-faq",
+        "widgets.home-doctors",
+        "widgets.home-choose",
+        "widgets.home-blogs",
+        "widgets.home-about",
+        "widgets.blog-listing",
+        "widgets.featured-blogs",
+        "widgets.service-banner",
+        "widgets.service-about",
+        "widgets.package-widget",
+        "widgets.package-listing",
+        "widgets.home-testimonials",
+        "widgets.home-clients",
+        "widgets.doctors-single-banner",
+        "widgets.doctors-detail",
+        "widgets.doctors-content",
+        "widgets.detail-widget",
+        "widgets.cta-section",
+        "widgets.content-sec",
+        "widgets.ceo-message",
+        "widgets.contact-details",
+        "widgets.contact-banner"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

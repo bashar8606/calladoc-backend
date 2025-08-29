@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_widgets_home_chooses",
+  "info": {
+    "displayName": "HomeChoose",
+    "description": "HomeChoose widget component"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "titleMain": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "items": {
+      "type": "component",
+      "component": "shared.card",
+      "repeatable": true
+    }
+  }
+}

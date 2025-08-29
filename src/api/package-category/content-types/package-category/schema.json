@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "package_categories",
+  "info": {
+    "singularName": "package-category",
+    "pluralName": "package-categories",
+    "displayName": "PackageCategory"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    }
+  }
+}

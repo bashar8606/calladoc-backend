@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_points",
+  "info": {
+    "displayName": "point"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "neutral",
+        "positive",
+        "negative"
+      ]
+    },
+    "title": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "package_pages",
+  "info": {
+    "singularName": "package-page",
+    "pluralName": "package-pages",
+    "displayName": "PackagePage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "widgets": {
+      "type": "dynamiczone",
+      "components": [
+        "widgets.service-banner",
+        "widgets.service-about",
+        "widgets.package-widget",
+        "widgets.inner-banner",
+        "widgets.home-testimonials",
+        "widgets.home-stat",
+        "widgets.home-spec",
+        "widgets.home-services",
+        "widgets.home-faq",
+        "widgets.home-doctors",
+        "widgets.home-clients",
+        "widgets.home-choose",
+        "widgets.home-blogs",
+        "widgets.home-banner",
+        "widgets.home-about",
+        "widgets.featured-blogs",
+        "widgets.doctors-single-banner",
+        "widgets.doctors-detail",
+        "widgets.doctors-content",
+        "widgets.detail-widget",
+        "widgets.cta-section",
+        "widgets.content-sec",
+        "widgets.blog-listing",
+        "widgets.package-listing"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

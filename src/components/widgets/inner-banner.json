@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_widgets_inner_banners",
+  "info": {
+    "displayName": "InnerBanner",
+    "description": "InnerBanner widget component for inner page banners"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "titleMain": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

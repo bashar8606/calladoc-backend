@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_widgets_home_blogs",
+  "info": {
+    "displayName": "HomeBlogs",
+    "description": "HomeBlogs widget component"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "titleMain": {
+      "type": "string"
+    },
+    "items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "widgets": {
+      "type": "dynamiczone",
+      "components": [
+        "widgets.home-stat",
+        "widgets.home-spec",
+        "widgets.home-services",
+        "widgets.home-doctors",
+        "widgets.home-choose",
+        "widgets.home-blogs",
+        "widgets.home-banner",
+        "widgets.home-about",
+        "widgets.home-faq",
+        "widgets.inner-banner",
+        "widgets.blog-listing",
+        "widgets.featured-blogs",
+        "widgets.home-testimonials",
+        "widgets.doctors-single-banner",
+        "widgets.doctors-detail",
+        "widgets.doctors-content",
+        "widgets.detail-widget",
+        "widgets.service-banner",
+        "widgets.service-about",
+        "widgets.package-widget",
+        "widgets.package-listing",
+        "widgets.home-clients",
+        "widgets.cta-section",
+        "widgets.content-sec",
+        "widgets.contact-details",
+        "widgets.contact-banner",
+        "widgets.ceo-message"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

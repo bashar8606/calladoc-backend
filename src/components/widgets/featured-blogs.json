@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_widgets_featured_blogs",
+  "info": {
+    "displayName": "FeaturedBlogs",
+    "description": "FeaturedBlogs widget component for highlighting featured blog posts"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "titleMain": {
+      "type": "string"
+    },
+    "latest": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
+    },
+    "popular": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
+    }
+  },
+  "config": {}
+}

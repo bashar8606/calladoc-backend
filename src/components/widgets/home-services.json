@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_widgets_home_services",
+  "info": {
+    "displayName": "HomeServices",
+    "description": "HomeServices widget component"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "titleMain": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service"
+    }
+  }
+}

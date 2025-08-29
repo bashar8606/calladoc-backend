@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "doctor_pages",
+  "info": {
+    "singularName": "doctor-page",
+    "pluralName": "doctor-pages",
+    "displayName": "DoctorPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "widgets": {
+      "type": "dynamiczone",
+      "components": [
+        "widgets.inner-banner",
+        "widgets.home-stat",
+        "widgets.home-spec",
+        "widgets.home-services",
+        "widgets.home-faq",
+        "widgets.home-doctors",
+        "widgets.home-choose",
+        "widgets.home-blogs",
+        "widgets.home-banner",
+        "widgets.home-about",
+        "widgets.featured-blogs",
+        "widgets.doctors-single-banner",
+        "widgets.doctors-detail",
+        "widgets.doctors-content",
+        "widgets.detail-widget",
+        "widgets.blog-listing"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

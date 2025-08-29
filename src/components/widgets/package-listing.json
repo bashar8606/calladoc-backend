@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_widgets_package_listings",
+  "info": {
+    "displayName": "PackageListing",
+    "description": "PackageListing widget component"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "titleMain": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::package.package"
+    }
+  }
+}

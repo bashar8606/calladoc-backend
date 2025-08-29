@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shared_package_items",
+  "info": {
+    "displayName": "PackageItem"
+  },
+  "options": {},
+  "attributes": {
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "component": "shared.point",
+      "repeatable": true
+    },
+    "price": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_widgets_home_banners",
+  "info": {
+    "displayName": "HomeBanner"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "link": {
+      "type": "component",
+      "component": "shared.sub-link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

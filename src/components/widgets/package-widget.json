@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_widgets_package-widgets",
+  "info": {
+    "displayName": "PackageWidget",
+    "description": "PackageWidget widget component."
+  },
+  "options": {
+    "timestamps": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 100,
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "items": {
+      "type": "component",
+      "component": "shared.package-item",
+      "repeatable": true
+    }
+  }
+}

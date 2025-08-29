@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_widgets_contact_banners",
+  "info": {
+    "displayName": "ContactBanner",
+    "description": "ContactBanner widget component"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+} 

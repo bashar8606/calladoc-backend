@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_widgets_blog_listings",
+  "info": {
+    "displayName": "BlogListing",
+    "description": "BlogListing widget component for displaying blog posts in a grid format"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
+    },
+    "showLoadMore": {
+      "type": "boolean",
+      "default": false
+    },
+    "loadMoreText": {
+      "type": "string"
+    }
+  },
+  "config": {}
+} 

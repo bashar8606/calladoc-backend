@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_widgets_doctors-contents",
+  "info": {
+    "displayName": "DoctorsContent",
+    "description": "DoctorsContent widget component."
+  },
+  "options": {
+    "timestamps": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 100,
+      "required": true
+    },
+    "titleMain": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::doctor.doctor"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_widgets_home-testimonialss",
+  "info": {
+    "displayName": "HomeTestimonials",
+    "description": "HomeTestimonials widget component."
+  },
+  "options": {
+    "timestamps": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 100,
+      "required": true
+    },
+    "titleMain": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testimonial.testimonial"
+    }
+  }
+}

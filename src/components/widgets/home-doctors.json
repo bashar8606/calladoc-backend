@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_widgets_home_doctors",
+  "info": {
+    "displayName": "HomeDoctors",
+    "description": "HomeDoctors widget component"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "titleSm": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::doctor.doctor"
+    }
+  }
+}
