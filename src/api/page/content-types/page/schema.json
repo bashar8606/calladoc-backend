@@ -48,7 +48,8 @@
         "widgets.content-sec",
         "widgets.ceo-message",
         "widgets.contact-details",
-        "widgets.contact-banner"
+        "widgets.contact-banner",
+        "widgets.service-listing"
       ]
     },
     "seo": {

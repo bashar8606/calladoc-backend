@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_widgets_service_listings",
+  "info": {
+    "displayName": "ServiceListing",
+    "description": "ServiceListing widget component"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "titleMain": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service"
+    }
+  }
+}

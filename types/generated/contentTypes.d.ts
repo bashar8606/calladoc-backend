@@ -549,6 +549,17 @@ export interface ApiDoctorPageDoctorPage extends Struct.SingleTypeSchema {
         'widgets.doctors-content',
         'widgets.detail-widget',
         'widgets.blog-listing',
+        'widgets.service-banner',
+        'widgets.service-about',
+        'widgets.package-widget',
+        'widgets.package-listing',
+        'widgets.home-testimonials',
+        'widgets.home-clients',
+        'widgets.cta-section',
+        'widgets.content-sec',
+        'widgets.contact-details',
+        'widgets.contact-banner',
+        'widgets.ceo-message',
       ]
     >;
   };
@@ -980,6 +991,69 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'widgets.ceo-message',
         'widgets.contact-details',
         'widgets.contact-banner',
+        'widgets.service-listing',
+      ]
+    >;
+  };
+}
+
+export interface ApiServicePageServicePage extends Struct.SingleTypeSchema {
+  collectionName: 'service_pages';
+  info: {
+    displayName: 'ServicePage';
+    pluralName: 'service-pages';
+    singularName: 'service-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::service-page.service-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    widgets: Schema.Attribute.DynamicZone<
+      [
+        'widgets.service-banner',
+        'widgets.service-about',
+        'widgets.package-widget',
+        'widgets.package-listing',
+        'widgets.inner-banner',
+        'widgets.home-testimonials',
+        'widgets.home-stat',
+        'widgets.home-spec',
+        'widgets.home-services',
+        'widgets.home-faq',
+        'widgets.home-doctors',
+        'widgets.home-clients',
+        'widgets.home-choose',
+        'widgets.home-blogs',
+        'widgets.home-banner',
+        'widgets.home-about',
+        'widgets.featured-blogs',
+        'widgets.doctors-single-banner',
+        'widgets.doctors-detail',
+        'widgets.doctors-content',
+        'widgets.detail-widget',
+        'widgets.cta-section',
+        'widgets.content-sec',
+        'widgets.contact-details',
+        'widgets.contact-banner',
+        'widgets.ceo-message',
+        'widgets.blog-listing',
+        'widgets.service-listing',
       ]
     >;
   };
@@ -1057,7 +1131,7 @@ export interface ApiTestimonialTestimonial extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    description: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
     designation: Schema.Attribute.String;
     img: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -1599,6 +1673,7 @@ declare module '@strapi/strapi' {
       'api::package-page.package-page': ApiPackagePagePackagePage;
       'api::package.package': ApiPackagePackage;
       'api::page.page': ApiPagePage;
+      'api::service-page.service-page': ApiServicePageServicePage;
       'api::service.service': ApiServiceService;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
       'plugin::content-releases.release': PluginContentReleasesRelease;

@@ -628,6 +628,20 @@ export interface WidgetsServiceBanner extends Struct.ComponentSchema {
   };
 }
 
+export interface WidgetsServiceListing extends Struct.ComponentSchema {
+  collectionName: 'components_widgets_service_listings';
+  info: {
+    description: 'ServiceListing widget component';
+    displayName: 'ServiceListing';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    items: Schema.Attribute.Relation<'oneToMany', 'api::service.service'>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    titleMain: Schema.Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -673,6 +687,7 @@ declare module '@strapi/strapi' {
       'widgets.package-widget': WidgetsPackageWidget;
       'widgets.service-about': WidgetsServiceAbout;
       'widgets.service-banner': WidgetsServiceBanner;
+      'widgets.service-listing': WidgetsServiceListing;
     }
   }
 }
