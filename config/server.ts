@@ -1,7 +1,7 @@
 export default ({ env }) => ({
-  host: env('HOST', '0.0.0.0'),
+  host: env('HOST', '3.91.65.86'),
   port: env.int('PORT', 1337),
-  url: env('RENDER_EXTERNAL_URL', 'https://calladoc-backend.onrender.com'),
+  url: env('PUBLIC_URL', 'http://3.91.65.86:1337'),
   proxy: true, // <— important for Render / Heroku
   app: {
     keys: env.array('APP_KEYS', ['key1', 'key2']),
