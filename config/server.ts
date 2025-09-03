@@ -1,5 +1,5 @@
 export default ({ env }) => ({
-  host: env('HOST', '40.172.190.110'),
+  host: env('HOST', '0.0.0.0'),
   port: env.int('PORT', 1337),
   url: env('PUBLIC_URL', 'http://40.172.190.110:1337'),
   proxy: true, // <— important for Render / Heroku
