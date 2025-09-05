@@ -13,9 +13,13 @@
     "description": {
       "type": "text"
     },
-    "isActive": {
-      "type": "boolean",
-      "default": true
+    "titleMain": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "component": "shared.contact-card",
+      "repeatable": true
     }
   }
-} 
+}

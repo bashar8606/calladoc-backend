@@ -13,6 +13,29 @@ export interface SharedCard extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedContactCard extends Struct.ComponentSchema {
+  collectionName: 'components_shared_contact_cards';
+  info: {
+    displayName: 'ContactCard';
+  };
+  attributes: {
+    description: Schema.Attribute.String;
+    items: Schema.Attribute.Component<'shared.contact-list-item', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedContactListItem extends Struct.ComponentSchema {
+  collectionName: 'components_shared_contact_list_items';
+  info: {
+    displayName: 'ContactListItem';
+  };
+  attributes: {
+    type: Schema.Attribute.Enumeration<['phone', 'mail', 'location']>;
+    value: Schema.Attribute.String;
+  };
+}
+
 export interface SharedContentItem extends Struct.ComponentSchema {
   collectionName: 'components_shared_content_items';
   info: {
@@ -224,8 +247,9 @@ export interface WidgetsContactBanner extends Struct.ComponentSchema {
   };
   attributes: {
     description: Schema.Attribute.Text;
-    isActive: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    items: Schema.Attribute.Component<'shared.contact-card', true>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
+    titleMain: Schema.Attribute.String;
   };
 }
 
@@ -237,7 +261,7 @@ export interface WidgetsContactDetails extends Struct.ComponentSchema {
   };
   attributes: {
     description: Schema.Attribute.Text;
-    isActive: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    items: Schema.Attribute.Component<'shared.contact-card', true>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
@@ -654,6 +678,8 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'shared.card': SharedCard;
+      'shared.contact-card': SharedContactCard;
+      'shared.contact-list-item': SharedContactListItem;
       'shared.content-item': SharedContentItem;
       'shared.footer': SharedFooter;
       'shared.link': SharedLink;

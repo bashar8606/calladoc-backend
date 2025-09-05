@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_contact_cards",
+  "info": {
+    "displayName": "ContactCard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "component": "shared.contact-list-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
