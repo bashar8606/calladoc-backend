@@ -14,9 +14,9 @@
     "title": {
       "type": "string"
     },
-    "doctor": {
+    "doctors": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::doctor.doctor",
       "inversedBy": "languages"
     }

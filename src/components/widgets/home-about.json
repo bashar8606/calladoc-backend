@@ -22,6 +22,11 @@
         "videos",
         "audios"
       ]
+    },
+    "link": {
+      "type": "component",
+      "component": "shared.sub-link",
+      "repeatable": false
     }
   }
 }

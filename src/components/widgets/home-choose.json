@@ -20,6 +20,11 @@
       "type": "component",
       "component": "shared.card",
       "repeatable": true
+    },
+    "link": {
+      "type": "component",
+      "component": "shared.sub-link",
+      "repeatable": false
     }
   }
 }

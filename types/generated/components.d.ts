@@ -66,10 +66,12 @@ export interface SharedPackageItem extends Struct.ComponentSchema {
     displayName: 'PackageItem';
   };
   attributes: {
+    description: Schema.Attribute.Text;
     img: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     items: Schema.Attribute.Component<'shared.point', true>;
     price: Schema.Attribute.Integer;
     title: Schema.Attribute.String;
+    type: Schema.Attribute.Enumeration<['Basic', 'Premium', 'Advanced']>;
   };
 }
 
@@ -271,7 +273,8 @@ export interface WidgetsCtaSection extends Struct.ComponentSchema {
   };
   attributes: {
     description: Schema.Attribute.Text;
-    isActive: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    img: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    link: Schema.Attribute.Component<'shared.sub-link', false>;
     title: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.SetMinMaxLength<{
@@ -384,6 +387,7 @@ export interface WidgetsHomeAbout extends Struct.ComponentSchema {
   attributes: {
     description: Schema.Attribute.RichText;
     img: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    link: Schema.Attribute.Component<'shared.sub-link', false>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
@@ -409,6 +413,7 @@ export interface WidgetsHomeBlogs extends Struct.ComponentSchema {
   };
   attributes: {
     items: Schema.Attribute.Relation<'oneToMany', 'api::article.article'>;
+    link: Schema.Attribute.Component<'shared.sub-link', false>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     titleMain: Schema.Attribute.String;
   };
@@ -423,6 +428,7 @@ export interface WidgetsHomeChoose extends Struct.ComponentSchema {
   attributes: {
     description: Schema.Attribute.Text;
     items: Schema.Attribute.Component<'shared.card', true>;
+    link: Schema.Attribute.Component<'shared.sub-link', false>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     titleMain: Schema.Attribute.String;
   };
@@ -457,6 +463,7 @@ export interface WidgetsHomeDoctors extends Struct.ComponentSchema {
   attributes: {
     description: Schema.Attribute.Text;
     items: Schema.Attribute.Relation<'oneToMany', 'api::doctor.doctor'>;
+    link: Schema.Attribute.Component<'shared.sub-link', false>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     titleSm: Schema.Attribute.String;
   };
@@ -484,6 +491,7 @@ export interface WidgetsHomeServices extends Struct.ComponentSchema {
   attributes: {
     description: Schema.Attribute.Text;
     items: Schema.Attribute.Relation<'oneToMany', 'api::service.service'>;
+    link: Schema.Attribute.Component<'shared.sub-link', false>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     titleMain: Schema.Attribute.String;
   };

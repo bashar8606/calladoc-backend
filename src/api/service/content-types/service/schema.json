@@ -20,6 +20,12 @@
       "targetField": "title",
       "required": true
     },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::service-category.service-category",
+      "inversedBy": "services"
+    },
     "cover": {
       "type": "media",
       "multiple": false,

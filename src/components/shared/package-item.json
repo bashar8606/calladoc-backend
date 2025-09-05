@@ -5,6 +5,20 @@
   },
   "options": {},
   "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Basic",
+        "Premium",
+        "Advanced"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
     "img": {
       "type": "media",
       "multiple": false,
@@ -14,9 +28,6 @@
         "videos",
         "audios"
       ]
-    },
-    "title": {
-      "type": "string"
     },
     "items": {
       "type": "component",

@@ -20,6 +20,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::doctor.doctor"
+    },
+    "link": {
+      "type": "component",
+      "component": "shared.sub-link",
+      "repeatable": false
     }
   }
 }

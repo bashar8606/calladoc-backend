@@ -19,9 +19,9 @@
     },
     "languages": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::language.language",
-      "mappedBy": "doctor"
+      "mappedBy": "doctors"
     },
     "slug": {
       "type": "uid",
