@@ -25,6 +25,7 @@ export default factories.createCoreController('api::page.page', ({ strapi }) => 
                         populate:{
                             cover: true,
                             img: true,
+                            link:true,
                             items: {
                               populate:{
                                   cover: true,

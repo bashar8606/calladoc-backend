@@ -11,9 +11,11 @@
     "type": {
       "type": "enumeration",
       "enum": [
-        "Basic",
+        "Lite",
+        "Plus",
         "Premium",
-        "Advanced"
+        "Professional",
+        "Elite"
       ]
     },
     "description": {
