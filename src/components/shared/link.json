@@ -11,9 +11,9 @@
     "url": {
       "type": "string"
     },
-    "submenu": {
+    "sub": {
       "type": "component",
-      "component": "shared.sub-link",
+      "component": "shared.sub-drop",
       "repeatable": true
     }
   },

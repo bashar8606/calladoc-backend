@@ -67,7 +67,7 @@ export interface SharedLink extends Struct.ComponentSchema {
   };
   attributes: {
     label: Schema.Attribute.String;
-    submenu: Schema.Attribute.Component<'shared.sub-link', true>;
+    sub: Schema.Attribute.Component<'shared.sub-drop', true>;
     url: Schema.Attribute.String;
   };
 }
@@ -171,6 +171,18 @@ export interface SharedSlider extends Struct.ComponentSchema {
   };
   attributes: {
     files: Schema.Attribute.Media<'images', true>;
+  };
+}
+
+export interface SharedSubDrop extends Struct.ComponentSchema {
+  collectionName: 'components_shared_sub_drops';
+  info: {
+    displayName: 'subDrop';
+  };
+  attributes: {
+    label: Schema.Attribute.String;
+    links: Schema.Attribute.Component<'shared.sub-link', true>;
+    url: Schema.Attribute.String;
   };
 }
 
@@ -691,6 +703,7 @@ declare module '@strapi/strapi' {
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'shared.sub-drop': SharedSubDrop;
       'shared.sub-link': SharedSubLink;
       'shared.testimonial': SharedTestimonial;
       'shared.text-item': SharedTextItem;
