@@ -38,6 +38,12 @@
     },
     "price": {
       "type": "integer"
+    },
+    "note": {
+      "type": "text"
+    },
+    "avail": {
+      "type": "text"
     }
   },
   "config": {}

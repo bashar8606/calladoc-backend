@@ -89,9 +89,11 @@ export interface SharedPackageItem extends Struct.ComponentSchema {
     displayName: 'PackageItem';
   };
   attributes: {
+    avail: Schema.Attribute.Text;
     description: Schema.Attribute.Text;
     img: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     items: Schema.Attribute.Component<'shared.point', true>;
+    note: Schema.Attribute.Text;
     price: Schema.Attribute.Integer;
     title: Schema.Attribute.String;
     type: Schema.Attribute.Enumeration<
