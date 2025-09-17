@@ -293,7 +293,6 @@ export interface WidgetsContentSec extends Struct.ComponentSchema {
     description: Schema.Attribute.Text;
     items: Schema.Attribute.Component<'shared.content-item', true>;
     title: Schema.Attribute.String &
-      Schema.Attribute.Required &
       Schema.Attribute.SetMinMaxLength<{
         maxLength: 100;
       }>;
