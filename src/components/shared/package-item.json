@@ -8,18 +8,11 @@
     "title": {
       "type": "string"
     },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "Lite",
-        "Plus",
-        "Premium",
-        "Professional",
-        "Elite"
-      ]
-    },
     "description": {
       "type": "text"
+    },
+    "type": {
+      "type": "string"
     },
     "img": {
       "type": "media",

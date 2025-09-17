@@ -96,9 +96,7 @@ export interface SharedPackageItem extends Struct.ComponentSchema {
     note: Schema.Attribute.Text;
     price: Schema.Attribute.Integer;
     title: Schema.Attribute.String;
-    type: Schema.Attribute.Enumeration<
-      ['Lite', 'Plus', 'Premium', 'Professional', 'Elite']
-    >;
+    type: Schema.Attribute.String;
   };
 }
 
